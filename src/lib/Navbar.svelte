@@ -22,6 +22,12 @@
         color: var(--white);
     }
 
+    .navbar-links a:hover {
+        text-decoration: none;
+        color: var(--white);
+        opacity: .777;
+    }
+
     .navbar-buttons-wrapper {
         display: flex;
         justify-content: center;
