@@ -13,29 +13,40 @@
 
     .navbar-links {
         display: flex;
-        gap: 1rem;
+        align-items: center;
+        gap: 1.2rem;
     } 
 
     .navbar-links a {
         text-decoration: none;
         color: var(--white);
     }
+
+    .navbar-buttons-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: .5rem;
+        align-items: center;
+    }
+    .navbar-buttons-wrapper
+    .navbar-divider::after {
+        content: "";
+        border-left: 1px solid var(--gray);
+        opacity: .5;
+    }   
 </style>
 
 <div class="container navbar">
     <div class="navbar-wrapper">
-        <div class="navbar-logo">
-            <img src="/Logo.svg" alt="" srcset="">
-        </div>
+        <img src="/Logo.svg" alt="" srcset="">
         <div class="navbar-links">
             <a href="#">Products</a>
             <a href="#">Features</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
-            
-            <div>
+            <div class="navbar-buttons-wrapper">
                 <a href="">Login</a>
-
+                <span class="navbar-divider"></span>
                 <a class="btn" href="#">
                     Register
                 </a>
