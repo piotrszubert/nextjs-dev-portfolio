@@ -1,7 +1,6 @@
 <script>
     import '../app.css';
     import Footer from '../lib/Footer.svelte';
-    import Theme from '../lib/Theme/Theme.svelte';
     import Navbar from '../lib/Navbar.svelte';
     import "@fontsource/inter";
 </script>
@@ -10,7 +9,6 @@
     --font-family: "Inter";
 }
 </style>
-<Theme/>
 
 <div class="dark-bg">
     <Navbar/>
