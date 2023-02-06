@@ -1,6 +1,6 @@
 <style>
     .navbar {
-        padding: 20px 120px;
+        padding: 20px 0;
     }
 
     .navbar-wrapper {
@@ -42,22 +42,24 @@
     }   
 </style>
 
-<div class="container navbar">
-    <div class="navbar-wrapper">
-        <img src="/Logo.svg" alt="" srcset="">
-        <div class="navbar-links">
-            <a href="#">Products</a>
-            <a href="#">Features</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <div class="navbar-buttons-wrapper">
-                <a href="">Login</a>
-                <span class="navbar-divider"></span>
-                <a class="btn" href="#">
-                    Register
-                </a>
+
+<div class="container">
+    <div class="navbar">
+        <div class="navbar-wrapper">
+            <img src="/Logo.svg" alt="" srcset="">
+            <div class="navbar-links">
+                <a href="#">Products</a>
+                <a href="#">Features</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <div class="navbar-buttons-wrapper">
+                    <a href="">Login</a>
+                    <span class="navbar-divider"></span>
+                    <a class="btn" href="#">
+                        Register
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-
 </div>

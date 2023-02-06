@@ -10,7 +10,6 @@
     --button-padding-y: 10px 0;
     /* TYPOGRAPHY */
     --line-height: 28px;
-
     --container-max-width: 72rem;
 }
 
@@ -34,6 +33,10 @@ body {
     background-color: var(--button-bg-color);
     padding: 14px 32px;
     border-radius: 32px;
+}
+
+.btn:hover {
+    opacity: .777;
 }
 
 .container {
