@@ -1,3 +1,8 @@
-<h1>
-    aaa
-</h1>
+<script>
+    import Hero from "../lib/Hero.svelte";
+</script>
+
+
+<main>
+    <Hero/>
+</main>
