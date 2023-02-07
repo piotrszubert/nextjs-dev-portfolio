@@ -10,7 +10,10 @@
     }
 
     /* .navbar-logo {} */
-
+    
+    .menu-button {
+        display: none;
+    }
     .navbar-links {
         display: flex;
         align-items: center;
@@ -39,7 +42,17 @@
         content: "";
         border-left: 1px solid var(--gray);
         opacity: .5;
-    }   
+    }
+
+    @media (max-width: 768px) {
+        .navbar-links {
+            display: none;
+        }
+
+        .menu-button {
+            display: inline-block;
+        }
+    }
 </style>
 
 
@@ -47,7 +60,7 @@
     <div class="navbar">
         <div class="navbar-wrapper">
             <img src="/Logo.svg" alt="" srcset="">
-            <div class="navbar-links">
+            <nav class="navbar-links">
                 <a href="#">Products</a>
                 <a href="#">Features</a>
                 <a href="#">About</a>
@@ -59,6 +72,9 @@
                         Register
                     </a>
                 </div>
+            </nav>
+            <div class="menu-button">
+                Menu
             </div>
         </div>
     </div>
