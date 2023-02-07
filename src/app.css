@@ -31,12 +31,22 @@ body {
 
 .btn {
     background-color: var(--button-bg-color);
+    text-decoration: none;
+    color: var(--white);
+    padding: 14px 32px;
+    border-radius: 32px;
+}
+
+.btn a{
+    background-color: var(--button-bg-color);
+    text-decoration: none;
+    color: var(--white);
     padding: 14px 32px;
     border-radius: 32px;
 }
 
 .btn:hover {
-    opacity: .777;
+    opacity: 1 !important;
 }
 
 .container {
