@@ -1,3 +1,4 @@
+import Menu from '@/components/Menu'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`flex h-full flex-col bg-zinc-100 dark:bg-black ${inter.className}`}>
+        <Menu/>
         {children}
       </body>
     </html>
