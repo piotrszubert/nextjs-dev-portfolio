@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main
-      className={`${inter.className} max-w-4xl py-10 mx-auto`}
+      className={`${inter.className} max-w-4xl mx-auto`}
     >
     <Header/>
     <Button variant={'outline'}>
