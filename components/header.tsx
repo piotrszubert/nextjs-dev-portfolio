@@ -1,5 +1,6 @@
 import { Github, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button'
+import NavMenu from './navMenu';
 
 export default function Header() {
   return (
@@ -8,6 +9,7 @@ export default function Header() {
         <span className="font-semibold text-lg">
           Logo
         </span>
+        <NavMenu/>
         <div className="flex">
           <Button variant="ghost">
             <Github />
