@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const links = [
   { name: 'Home', path: '/' },
@@ -8,11 +9,16 @@ const links = [
 ];
 
 export default function NavMenu() {
+  const router = useRouter();
+
   return (
     <nav className='flex justify-evenly'>
       {links.map((link, index) => (
-        <Link key={index} href={link.path}>
-          {link.name}
+        <Link 
+          className={`${router.pathname === link.path ? 'underline' : ''} font-semibold hover:text-slate-500`} 
+          key={index} 
+          href={link.path}>
+            {link.name}
         </Link>
       ))}
     </nav>
