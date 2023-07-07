@@ -9,7 +9,7 @@ const links = [
 
 export default function NavMenu() {
   return (
-    <nav className='flex gap-2'>
+    <nav className='flex justify-evenly'>
       {links.map((link, index) => (
         <Link key={index} href={link.path}>
           {link.name}
