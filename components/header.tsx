@@ -1,6 +1,7 @@
 import { Github, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button'
 import NavMenu from './navMenu';
+import { ThemeToggle } from './themeToggle';
 
 export default function Header() {
   return (
@@ -9,6 +10,7 @@ export default function Header() {
         <div className='flex-1'>
           <span className="font-semibold text-lg">
             {/* Logo */}
+            <ThemeToggle/>
           </span>
         </div>
         <div className='flex-1 justify-center'>
