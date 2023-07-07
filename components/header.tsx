@@ -17,10 +17,10 @@ export default function Header() {
           <NavMenu/>
         </div>
         <div className="flex flex-1 justify-end">
-          <Button variant="ghost">
+          <Button variant="ghost" size="icon">
             <Github />
           </Button>
-          <Button variant="ghost">
+          <Button variant="ghost" size="icon">
             <Twitter />
           </Button>
         </div>
