@@ -8,17 +8,17 @@ const links = [
   { name: 'Contact', path: '/contact' },
 ];
 
-export default function NavMenu() {
+export default function NavMenu({ flexDirection = 'flex-row', gap = '' }) {
   const router = useRouter();
 
   return (
-    <nav className='flex justify-evenly'>
+    <nav className={`flex justify-evenly ${flexDirection} ${gap}`}>
       {links.map((link, index) => (
-        <Link 
-          className={`${router.pathname === link.path ? 'underline' : ''} font-semibold hover:text-slate-500`} 
-          key={index} 
+        <Link
+          className={`${router.pathname === link.path ? 'underline' : ''} font-semibold hover:text-slate-500`}
+          key={index}
           href={link.path}>
-            {link.name}
+          {link.name}
         </Link>
       ))}
     </nav>

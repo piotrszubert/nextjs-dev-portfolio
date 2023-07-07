@@ -37,7 +37,7 @@ export default function Header() {
       </div>
       {isOpen && (
         <div className="mt-2 flex flex-col items-center">
-          <NavMenu />
+          <NavMenu flexDirection='flex-col' gap='gap-3' />
           <div className="mt-2">
             <Button variant="ghost" size="icon">
               <Github />
