@@ -5,7 +5,8 @@ import { useRouter } from 'next/router';
 const links = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
-  { name: 'Contact', path: '/contact' },
+  { name: 'Blog', path: '/blog' },
+  { name: 'Uses', path: '/uses' },
 ];
 
 export default function NavMenu({ flexDirection = 'flex-row', gap = '' }) {
