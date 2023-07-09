@@ -10,7 +10,7 @@ export default function PageHero({ heading = 'Default heading', subheading = 'De
   return (
     <>
       <div className="py-16">
-        <h1 className='font-extrabold tracking-tight lg:text-5xl'>{heading}</h1>
+        <h1 className='font-extrabold tracking-tight text-5xl'>{heading}</h1>
         <p className='leading-7 mt-6'>{subheading}</p>
         {children && (
           <div className='mt-6'>
