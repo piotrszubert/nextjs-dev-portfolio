@@ -9,7 +9,7 @@ const links = [
   { name: 'Uses', path: '/uses' },
 ];
 
-export default function NavMenu({ flexDirection = 'flex-row', gap = '' }) {
+export default function NavMenu({ flexDirection = 'flex-row', gap = 'gap-4' }) {
   const router = useRouter();
 
   return (
