@@ -33,6 +33,7 @@ export default function About() {
           <div className='py-16 ms-0 md:ms-10'>
             <div className='flex items-start flex-col md:ps-10'>
               <Image
+                alt='about image'
                 className='rounded-xl max-w-full'
                 width="350"
                 height="350"
