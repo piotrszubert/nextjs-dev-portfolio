@@ -3,6 +3,7 @@ import Layout from '@/components/layout'
 import PageHero from '@/components/pageHero'
 import LinkList from '@/components/linksList'
 import WorkCard from '@/components/workCard'
+import NewsletterCard from '@/components/newsletterCard'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,7 +27,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div>
-            <WorkCard/>
+            <NewsletterCard/>
           </div>  
           <div>
             <WorkCard/>
