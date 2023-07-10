@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import { Button } from '@/components/ui/button'
 import Layout from '@/components/layout'
 import PageHero from '@/components/pageHero'
+import LinkList from '@/components/linksList'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,12 +30,17 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className='py-6 rotate-3'>
-            <img
-              className='rounded-xl mx-auto'
-              width="350"
-              height="350"
-              src='https://via.placeholder.com/350' />
+          <div className='py-16'>
+            <div className='max-w-[420px] max-h-[420px]'>
+              <img
+                className='rounded-xl mx-auto rotate-2 max-w-full'
+                width="350"
+                height="350"
+                src='https://via.placeholder.com/420' />
+              <div className="mt-6">
+                <LinkList nameVisible={true} flexDirectionClass='flex-col'/>
+              </div>
+            </div>
           </div>
         </div>
       </main>

@@ -9,14 +9,14 @@ const links = [
   { name: 'Uses', path: '/uses' },
 ];
 
-export default function NavMenu({ flexDirection = 'flex-row', gap = 'gap-4' }) {
+export default function NavMenu({ flexDirection = 'flex-row', gap = 'gap-3' }) {
   const router = useRouter();
 
   return (
     <nav className={`flex justify-evenly ${flexDirection} ${gap}`}>
       {links.map((link, index) => (
         <Link
-          className={`${router.pathname === link.path ? 'underline' : ''} font-semibold hover:text-slate-500`}
+          className={`${router.pathname === link.path ? 'underline' : ''} font-semibold hover:text-violet-400`}
           key={index}
           href={link.path}>
           {link.name}
