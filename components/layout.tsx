@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
 import Header from './header';
-
+import Footer from './footer';
 const inter = Inter({ subsets: ['latin'] })
 
 type LayoutProps = {
@@ -14,6 +14,7 @@ export default function Layout({children}: LayoutProps) {
             <main className={`${inter.className}`}>
                 {children}
             </main>
+            <Footer/>
         </div>
     );
 }
