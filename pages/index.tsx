@@ -1,8 +1,8 @@
 import { Inter } from 'next/font/google'
-import { Button } from '@/components/ui/button'
 import Layout from '@/components/layout'
 import PageHero from '@/components/pageHero'
 import LinkList from '@/components/linksList'
+import WorkCard from '@/components/workCard'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +24,7 @@ export default function Home() {
           />
         </PageHero>
       </div>
+      <WorkCard/>
       </main>
     </Layout>
   )
