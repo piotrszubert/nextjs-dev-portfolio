@@ -18,27 +18,27 @@ const links = [
     {
         icon: <Github/>,
         href: '#',
-        name: 'github',
+        name: 'Github',
     },
     {
         icon: <Twitter/>,
         href: '#',
-        name: 'twitter',
+        name: 'Twitter',
     },
     {
         icon: <Instagram/>,
         href: '#',
-        name: 'instagram',
+        name: 'Instagram',
     },
     {
         icon: <Linkedin/>,
         href: '#',
-        name: 'linkedin',
+        name: 'LinkedIn',
     },
     {
         icon: <Mail/>,
         href: `mailto:${siteConfig.links.email}`,
-        name: 'email',
+        name: siteConfig.links.email,
     },
 ]
 
@@ -51,7 +51,7 @@ export default function LinkList({ nameVisible = true, flexDirectionClass = 'fle
                     key={index}
                     >
                     <Link
-                        className='inline-flex gap-3 hover:text-violet-400'
+                        className='inline-flex gap-3 items-center hover:text-violet-400 text-sm font-semibold'
                         href={item.href}
                     >
                         {item.icon}
