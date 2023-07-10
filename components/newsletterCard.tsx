@@ -3,7 +3,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
@@ -19,7 +18,7 @@ export default function NewsletterCard() {
             <CardTitle>
               <div className="flex items-center gap-3">
                 <Mail/>
-                Work
+                Stay up to date
               </div>
             </CardTitle>
             <CardDescription>
@@ -35,8 +34,6 @@ export default function NewsletterCard() {
               </Button>
             </div>
           </CardContent>
-          {/* <CardFooter>
-          </CardFooter> */}
         </Card>
     </div>
   );
