@@ -36,11 +36,11 @@ export default function WorkCard() {
                     <span className="font-semibold">
                       {item.company}
                     </span>
-                    <span className="text-xs text-zinc-400">
+                    <span className="text-xs text-muted-foreground">
                       {item.position}
                     </span>
                   </div>
-                  <div className="text-xs text-zinc-400">
+                  <div className="text-xs text-muted-foreground">
                     {item.start}-{item.end}
                   </div>
                 </li>
