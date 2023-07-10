@@ -7,5 +7,6 @@ export const siteConfig = {
   links: {
     twitter: "https://twitter.com",
     github: "https://github.com",
+    email: "example@gmail.com"
   },
 }
