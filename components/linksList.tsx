@@ -11,6 +11,7 @@ import { siteConfig } from '@/config/site';
 type LinkListProps = {
   nameVisible?: boolean;
   flexDirectionClass?: string;
+  paddingClass?: string;
 };
 
 const links = [
@@ -41,9 +42,9 @@ const links = [
     },
 ]
 
-export default function LinkList({ nameVisible = true, flexDirectionClass = 'flex-col' }: LinkListProps) {
+export default function LinkList({ nameVisible = true, flexDirectionClass = 'flex-col', paddingClass = 'p-6' }: LinkListProps) {
   return (
-    <div className="p-6">
+    <div className={`${paddingClass}`}>
         <ul className={`flex ${flexDirectionClass} gap-3`}>
             {links.map((item, index) => (
                 <li
