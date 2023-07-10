@@ -10,7 +10,7 @@ import { FileDown, Briefcase } from 'lucide-react';
 
 
 const workTimeline = [
-  { company: 'Blitz', position: 'CEO', start: '2022', end: 'Present' },
+  { company: 'Portfolio', position: 'CEO', start: '2022', end: 'Present' },
   { company: 'Facebook', position: 'Teamleader', start: '2020', end: '2022' },
   { company: 'Snapchat', position: 'Product designer', start: '2018', end: '2020' },
   { company: 'Tesla', position: 'Software developer', start: '2016', end: '2018' },
@@ -31,7 +31,9 @@ export default function WorkCard() {
           <CardContent>
             <ul className='flex flex-col gap-3'>
               {workTimeline.map((item, index) => (
-                <li className="flex justify-between items-center">
+                <li
+                  key={index} 
+                  className="flex justify-between items-center">
                   <div className="flex flex-col">
                     <span className="font-semibold">
                       {item.company}

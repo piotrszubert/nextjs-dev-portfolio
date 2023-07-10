@@ -17,8 +17,8 @@ export default function About() {
             <PageHero
               heading='Welcome to my personal portfolio!'
               subheading=''
-            />
-            <div className='space-y-7'>
+            >
+            <div className='space-y-7 text-muted-foreground'>
               <p>
                 I'm [Your Name], a dedicated and passionate software developer with a strong desire to create innovative solutions that positively impact people's lives. From the first time I wrote a line of code, I knew I had found my calling. The world of software development is dynamic, constantly evolving, and I find great joy in keeping up with the latest technologies and trends.
               </p>
@@ -29,6 +29,7 @@ export default function About() {
                 Throughout my career, I have had the privilege of working on a variety of projects that have challenged me and allowed me to grow both professionally and personally. Whether it's building scalable web applications, developing mobile apps, or creating robust backend systems, I embrace every opportunity to tackle complex problems and deliver elegant solutions.
               </p>
             </div>
+            </PageHero>
           </div>
           <div className='py-16 ms-0 border-s-0 md:border-s md:ms-10'>
             <div className='flex items-start flex-col md:ps-10'>

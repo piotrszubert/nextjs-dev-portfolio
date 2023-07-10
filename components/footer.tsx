@@ -10,7 +10,7 @@ export default function Footer() {
                 />
             </div>
             <div className="text-muted-foreground">
-                &copy; 2023 Blitz.
+                &copy; 2023 Portfolio.
                 All rights reserved. 
             </div>
         </div>
