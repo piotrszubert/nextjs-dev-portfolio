@@ -1,9 +1,8 @@
 import { Inter } from 'next/font/google'
-import { Button } from '@/components/ui/button'
 import Layout from '@/components/layout'
 import PageHero from '@/components/pageHero'
 import LinkList from '@/components/linksList'
-
+import Image from 'next/image'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function About() {
@@ -31,13 +30,14 @@ export default function About() {
             </div>
             </PageHero>
           </div>
-          <div className='py-16 ms-0 border-s-0 md:border-s md:ms-10'>
+          <div className='py-16 ms-0 md:ms-10'>
             <div className='flex items-start flex-col md:ps-10'>
-              <img
+              <Image
+                alt='about image'
                 className='rounded-xl max-w-full'
                 width="350"
                 height="350"
-                src='https://via.placeholder.com/350' />
+                src='/about-image.jpg' />
               <div className="mt-6">
                 <LinkList nameVisible={true} paddingClass='py-6' flexDirectionClass='flex-col'/>
               </div>
