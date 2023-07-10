@@ -19,13 +19,13 @@ export default function About() {
             >
             <div className='space-y-7 text-muted-foreground'>
               <p>
-                I'm [Your Name], a dedicated and passionate software developer with a strong desire to create innovative solutions that positively impact people's lives. From the first time I wrote a line of code, I knew I had found my calling. The world of software development is dynamic, constantly evolving, and I find great joy in keeping up with the latest technologies and trends.
+                I&apos;m [Your Name], a dedicated and passionate software developer with a strong desire to create innovative solutions that positively impact people&apos;s lives. From the first time I wrote a line of code, I knew I had found my calling. The world of software development is dynamic, constantly evolving, and I find great joy in keeping up with the latest technologies and trends.
               </p>
               <p>
                 With a solid educational foundation in computer science and [relevant degrees/certifications], I have acquired a deep understanding of software development principles, algorithms, and data structures. I am proficient in [programming languages, frameworks, and tools you specialize in]. My technical expertise extends to [additional skills or technologies you have mastered].
               </p>
               <p>
-                Throughout my career, I have had the privilege of working on a variety of projects that have challenged me and allowed me to grow both professionally and personally. Whether it's building scalable web applications, developing mobile apps, or creating robust backend systems, I embrace every opportunity to tackle complex problems and deliver elegant solutions.
+                Throughout my career, I have had the privilege of working on a variety of projects that have challenged me and allowed me to grow both professionally and personally. Whether it&apos;s building scalable web applications, developing mobile apps, or creating robust backend systems, I embrace every opportunity to tackle complex problems and deliver elegant solutions.
               </p>
             </div>
             </PageHero>
