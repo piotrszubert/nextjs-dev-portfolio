@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -28,7 +27,6 @@ export default function WorkCard() {
                 Work
               </div>
             </CardTitle>
-            {/* <CardDescription>Card Description</CardDescription> */}
           </CardHeader>
           <CardContent>
             <ul className='flex flex-col gap-3'>
