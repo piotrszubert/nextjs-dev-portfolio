@@ -3,9 +3,13 @@ import Header from './header';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Layout({children}) {
+type LayoutProps = {
+    children: React.ReactNode;
+};
+
+export default function Layout({children}: LayoutProps) {
     return(
-        <div className='max-w-4xl mx-auto px-4 md:px-0'>
+        <div className='max-w-4xl mx-auto px-4 lg:px-2'>
             <Header/>
             <main className={`${inter.className}`}>
                 {children}

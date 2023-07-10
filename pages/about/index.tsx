@@ -30,15 +30,15 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className='py-16'>
-            <div className='max-w-[420px] max-h-[420px]'>
+          <div className='py-16 ms-0 border-s-0 md:border-s md:ms-10'>
+            <div className='flex items-start flex-col md:ps-10'>
               <img
-                className='rounded-xl mx-auto rotate-2 max-w-full'
+                className='rounded-xl max-w-full'
                 width="350"
                 height="350"
-                src='https://via.placeholder.com/420' />
+                src='https://via.placeholder.com/350' />
               <div className="mt-6">
-                <LinkList nameVisible={true} flexDirectionClass='flex-col'/>
+                <LinkList nameVisible={true} paddingClass='py-6' flexDirectionClass='flex-col'/>
               </div>
             </div>
           </div>
