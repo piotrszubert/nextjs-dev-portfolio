@@ -3,6 +3,7 @@ import Layout from '@/components/layout'
 import PageHero from '@/components/pageHero'
 import LinkList from '@/components/linksList'
 import Image from 'next/image'
+import aboutImage from '@/public/about-image.jpg'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function About() {
@@ -35,9 +36,7 @@ export default function About() {
               <Image
                 alt='about image'
                 className='rounded-xl max-w-full'
-                width="350"
-                height="350"
-                src='/about-image.jpg' />
+                src={aboutImage} />
               <div className="mt-6">
                 <LinkList nameVisible={true} paddingClass='py-6' flexDirectionClass='flex-col'/>
               </div>
