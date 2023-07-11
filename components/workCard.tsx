@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/card"
 import { FileDown, Briefcase } from 'lucide-react';
 
-
 const workTimeline = [
   { company: 'Portfolio', position: 'CEO', start: '2022', end: 'Present' },
   { company: 'Facebook', position: 'Teamleader', start: '2020', end: '2022' },
@@ -50,11 +49,13 @@ export default function WorkCard() {
             </ul>
           </CardContent>
           <CardFooter>
-            <Button size="lg" className="w-full" variant="outline">
-              <div className="flex gap-2">
-                Download CV 
-                <FileDown className="w-6 h-5"/>
-              </div>
+            <Button asChild size="lg" className="w-full" variant="outline">
+              <a href="/assets/cv.pdf" download>
+                <div className="flex gap-2">
+                  Download CV 
+                  <FileDown className="w-6 h-5"/>
+                </div>
+              </a>
             </Button>
           </CardFooter>
         </Card>
