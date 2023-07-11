@@ -11,7 +11,9 @@ export default function ProjectsList() {
   return (
     <div className="py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-4">
         {projects.map((project, index) => (
-            <div className="space-y-6 relative hover:cursor-pointer border-s-2 hover:bg-accent hover:border-violet-400 hover:text-violet-400 rounded-xl p-3">
+            <div 
+                key={index}
+                className="space-y-6 relative hover:cursor-pointer border-s-2 hover:bg-accent hover:border-violet-400 hover:text-violet-400 rounded-xl p-3">
                 <div className="font-semibold text-lg text-foreground"> 
                     {project.title}
                 </div>
