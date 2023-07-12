@@ -5,9 +5,26 @@ import LinkList from '@/components/linksList'
 import WorkCard from '@/components/workCard'
 import NewsletterCard from '@/components/newsletterCard'
 
+import { getSortedPostsData } from '@/lib/posts';
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
+
+type postType = {
+  id?: number,
+  date?: string,
+  title?: string
+}
+
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({allPostsData}: any) {
   return (
     <Layout>
       <main
@@ -27,6 +44,15 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div>
+          {allPostsData.map(({ id, date, title } : postType) => (
+            <li key={id}>
+              {title}
+              <br />
+              {id}
+              <br />
+              {date}
+            </li>
+          ))}
             3 blog posts here
           </div>  
           <div className='space-y-6 md:ps-10'>
