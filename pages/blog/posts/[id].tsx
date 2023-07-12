@@ -11,7 +11,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: any) {
-  const postData = getPostData(params.id);
+  const postData = await getPostData(params.id);
   return {
     props: {
       postData,
@@ -27,7 +27,8 @@ export default function Post({ postData }: any) {
           heading={postData.heading} 
           subheading={postData.subheading}
         />
-        {postData.date}
+        {/* {postData.date} */}
+        <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </main>
     </Layout>
   );
