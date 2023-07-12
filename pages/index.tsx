@@ -6,8 +6,9 @@ import WorkCard from '@/components/workCard'
 import NewsletterCard from '@/components/newsletterCard'
 
 import { getSortedPostsData } from '@/lib/posts';
+import PostsList from '@/components/postsList'
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const allPostsData = getSortedPostsData();
   return {
     props: {
@@ -44,16 +45,7 @@ export default function Home({allPostsData}: any) {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div>
-          {allPostsData.map(({ id, date, title } : postType) => (
-            <li key={id}>
-              {title}
-              <br />
-              {id}
-              <br />
-              {date}
-            </li>
-          ))}
-            3 blog posts here
+            <PostsList posts={allPostsData}/>
           </div>  
           <div className='space-y-6 md:ps-10'>
             <NewsletterCard/>
