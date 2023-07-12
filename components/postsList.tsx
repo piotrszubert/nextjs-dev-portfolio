@@ -40,7 +40,10 @@ export default function PostsList({ posts }: PostsListProps) {
               </p>
             </div>
           </Link>
-          {index !== posts.length - 1 && <Separator/>}
+          {index !== posts.length - 1 && ( 
+            <div className="mt-6">
+              <Separator className='my-6'/>
+            </div>)}
         </>
       ))}
     </div>
