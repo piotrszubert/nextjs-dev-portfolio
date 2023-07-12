@@ -9,10 +9,10 @@ interface PostData {
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
-export function getSortedPostsData(): PostData[] {
+export function getSortedPostsData(limit?: number): PostData[] {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData = fileNames.map((fileName) => {
+  let allPostsData = fileNames.map((fileName) => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, '');
 
@@ -29,12 +29,20 @@ export function getSortedPostsData(): PostData[] {
       ...matterResult.data,
     } as PostData;
   });
+
   // Sort posts by date
-  return allPostsData.sort((a, b) => {
+  allPostsData = allPostsData.sort((a, b) => {
     if (a.date < b.date) {
       return 1;
     } else {
       return -1;
     }
   });
+
+  // Limit the number of posts if a limit is provided
+  if (limit && limit > 0) {
+    allPostsData = allPostsData.slice(0, limit);
+  }
+
+  return allPostsData;
 }

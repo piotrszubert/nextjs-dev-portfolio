@@ -9,7 +9,7 @@ import { getSortedPostsData } from '@/lib/posts';
 import PostsList from '@/components/postsList'
 
 export async function getServerSideProps() {
-  const allPostsData = getSortedPostsData();
+  const allPostsData = getSortedPostsData(3);
   return {
     props: {
       allPostsData,
