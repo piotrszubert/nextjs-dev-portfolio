@@ -1,4 +1,8 @@
 import { ExternalLink } from 'lucide-react';
+import { siteConfig } from '@/config/site';
+
+const colorVariant = siteConfig.accentColor.colorVariant;
+const { accentTextClass, accentBorderClass } = siteConfig.accentColor.colorVariants[colorVariant];
 
 const projects = [
     {title: 'Opimage', description: 'High performance web images optimization library', url: 'opimage.io'},
@@ -13,7 +17,7 @@ export default function ProjectsList() {
         {projects.map((project, index) => (
             <div 
                 key={index}
-                className="space-y-6 relative hover:cursor-pointer border-s-2 hover:bg-accent hover:border-violet-400 hover:text-violet-400 rounded-xl p-3">
+                className={`space-y-6 relative hover:cursor-pointer border-s-2 hover:bg-accent ${'hover:' + accentBorderClass} ${'hover:' + accentTextClass} rounded-xl p-3`}>
                 <div className="font-semibold text-lg text-foreground"> 
                     {project.title}
                 </div>

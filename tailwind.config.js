@@ -6,7 +6,14 @@ module.exports = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
+    './config/**/*.{ts,tsx}',
 	],
+  safelist: [
+    {
+      pattern: /(text|border)-(lime|green|blue|indigo|orange|violet|red|amber|yellow|emerald|teal|cyan|light-blue|indigo|purple|fuchsia|pink|rose)-(400)/,
+      variants: ['hover'],
+    },
+  ],
   theme: {
     container: {
       center: true,

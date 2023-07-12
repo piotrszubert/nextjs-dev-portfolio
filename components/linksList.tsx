@@ -14,6 +14,9 @@ type LinkListProps = {
   paddingClass?: string;
 };
 
+const colorVariant = siteConfig.accentColor.colorVariant;
+const { accentTextClass } = siteConfig.accentColor.colorVariants[colorVariant];
+
 const links = [
     {
         icon: <Github/>,
@@ -51,7 +54,7 @@ export default function LinkList({ nameVisible = true, flexDirectionClass = 'fle
                     key={index}
                     >
                     <Link
-                        className='inline-flex gap-3 items-center hover:text-violet-400 text-sm font-semibold'
+                        className={`inline-flex gap-3 items-center ${'hover:' + accentTextClass} text-sm font-semibold`}
                         href={item.href}
                     >
                         {item.icon}

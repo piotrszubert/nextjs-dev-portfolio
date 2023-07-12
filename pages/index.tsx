@@ -29,7 +29,7 @@ export default function Home() {
           <div>
             3 blog posts here
           </div>  
-          <div className='space-y-6'>
+          <div className='space-y-6 md:ps-10'>
             <NewsletterCard/>
             <WorkCard/>
           </div>
