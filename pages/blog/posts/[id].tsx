@@ -28,7 +28,10 @@ export default function Post({ postData }: any) {
           subheading={postData.subheading}
         />
         {/* {postData.date} */}
-        <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div 
+          className="text-muted-foreground space-y-6" 
+          dangerouslySetInnerHTML={{ __html: postData.contentHtml }} 
+        />
       </main>
     </Layout>
   );
