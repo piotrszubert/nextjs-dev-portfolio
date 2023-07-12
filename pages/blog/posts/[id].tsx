@@ -1,4 +1,5 @@
 import Layout from "@/components/layout";
+import PageHero from "@/components/pageHero";
 import { getAllPostIds, getPostData } from '@/lib/posts';
 
 export async function getStaticPaths() {
@@ -22,8 +23,10 @@ export default function Post({ postData }: any) {
   return(
     <Layout>
       <main>
-        {postData.title}
-        {postData.id}
+        <PageHero
+          heading={postData.heading} 
+          subheading={postData.subheading}
+        />
         {postData.date}
       </main>
     </Layout>
