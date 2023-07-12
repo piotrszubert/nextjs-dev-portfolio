@@ -32,7 +32,7 @@ export default function PostsList({ posts }: PostsListProps) {
               {date}
             </p>
             <div className="">
-              <span className="flex gap-3">
+              <span className="flex gap-3 text-sm">
                 {subheading}
               </span>
             </div>
