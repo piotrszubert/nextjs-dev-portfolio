@@ -23,7 +23,7 @@ export default function PostsList({ posts }: PostsListProps) {
       {posts.map(({ id, date, heading, subheading }: PostType, index: number) => (
         <>
           <Link
-            href={`/posts/${id}`}
+            href={`blog/posts/${id}`}
             key={id}
             >
             <div 
