@@ -25,17 +25,15 @@ export default function PostsList({ posts }: PostsListProps) {
             key={id}
             className={`space-y-3 relative hover:cursor-pointer hover:bg-accent ${'hover:' + accentTextClass} rounded-xl p-3`}
           >
-            <div className="font-semibold tracking-tight text-lg"> 
-              {heading}
+            <div className="font-semibold tracking-tight text-lg max-w-lg"> 
+                {heading}
             </div>
             <p className="text-xs text-muted-foreground font-semibold">
-              {date}
+                {date}
             </p>
-            <div className="">
-              <span className="flex gap-3 text-muted-foreground text-sm">
+            <p className="flex gap-3 text-muted-foreground text-sm max-w-lg">
                 {subheading}
-              </span>
-            </div>
+            </p>
           </div>
           {index !== posts.length - 1 && <Separator/>}
         </>
