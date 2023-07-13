@@ -59,9 +59,9 @@ export default function Post({ postData }: any) {
             ul: UnorderedList,
             ol: OrderedList,
             p: Paragraph,
-          }}
-          children={postData.content}
-        />
+          }}>
+            {postData.content}
+          </ReactMarkdown>
       </main>
     </Layout>
   );
