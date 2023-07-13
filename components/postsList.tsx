@@ -21,10 +21,9 @@ export default function PostsList({ posts }: PostsListProps) {
   return (
     <div className="space-y-6">
       {posts.map(({ id, date, heading, subheading }: PostType, index: number) => (
-        <>
+        <div key={id}>
           <Link
             href={`blog/posts/${id}`}
-            key={id}
             >
             <div 
               className={`space-y-3 relative hover:cursor-pointer hover:bg-accent ${'hover:' + accentTextClass} rounded-xl p-3`}
@@ -44,7 +43,7 @@ export default function PostsList({ posts }: PostsListProps) {
             <div className="mt-6">
               <Separator className='my-6'/>
             </div>)}
-        </>
+        </div>
       ))}
     </div>
   );
