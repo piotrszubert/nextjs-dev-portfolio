@@ -4,12 +4,7 @@ import { siteConfig } from '@/config/site';
 const colorVariant = siteConfig.accentColor.colorVariant;
 const { accentTextClass, accentBorderClass } = siteConfig.accentColor.colorVariants[colorVariant];
 
-const projects = [
-    {title: 'Opimage', description: 'High performance web images optimization library', url: 'opimage.io'},
-    {title: 'Portfolio', description: 'Highest quality personal portfolio template', url: 'portfolio.io'},
-    {title: 'FontTurbo', description: 'Modern way to manage fonts on website', url: 'font.turbo'},
-    {title: 'ColorTurbo', description: 'Modern, fastest way to create color pallettes', url: 'color.turbo'},
-]
+const projects = siteConfig.projects;
 
 export default function ProjectsList() {
   return (
