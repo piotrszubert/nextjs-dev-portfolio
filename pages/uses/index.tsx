@@ -1,12 +1,16 @@
 import { Inter } from 'next/font/google'
 import Layout from '@/components/layout'
 import PageHero from '@/components/pageHero'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Uses() {
   return (
     <Layout>
+      <Head>
+        <title>Portfolio - Uses</title>
+      </Head>
       <main
         className={`${inter.className} max-w-4xl mx-auto`}
       >

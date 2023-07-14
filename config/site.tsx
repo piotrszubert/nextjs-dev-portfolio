@@ -14,8 +14,16 @@ export const siteConfig = {
   links: {
     twitter: "https://twitter.com",
     github: "https://github.com",
+    linkedIn: "https://linkedin.com",
+    instagram: "https://instagram.com",
     email: "example@gmail.com"
   },
+  projects: [
+    {title: 'Opimage', description: 'High performance web images optimization library', url: 'opimage.io'},
+    {title: 'Portfolio', description: 'Highest quality personal portfolio template', url: 'portfolio.io'},
+    {title: 'FontTurbo', description: 'Modern way to manage fonts on website', url: 'font.turbo'},
+    {title: 'ColorTurbo', description: 'Modern, fastest way to create color pallettes', url: 'color.turbo'},
+  ],
   accentColor: {
     colorVariant: 'purple',
     colorVariants: {
