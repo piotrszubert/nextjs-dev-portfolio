@@ -20,14 +20,30 @@ type NavMenuProps = {
   markActiveLink?: boolean;
 };
 
+type linktType = {
+  path?: string;
+  name?: string;
+};
+
 export default function NavMenu({ flexDirection = 'flex-row', gap = 'gap-3', markActiveLink = true }: NavMenuProps) {
   const router = useRouter();
+
+
+  const markLink = (markActiveLink: boolean, link: linktType) => {
+    if(markActiveLink) {
+      if(router.pathname === link.path || router.pathname.startsWith('/blog/') && link.name === "Blog") {
+        return "underline";
+      } else {
+        return '';
+      }
+    }
+  }
 
   return (
     <nav className={`flex justify-evenly ${flexDirection} ${gap}`}>
       {links.map((link, index) => (
         <Link
-          className={`${markActiveLink && router.pathname === link.path ? 'underline' : ''} font-semibold ${'hover:' + accentTextClass}`}
+          className={`${markLink(markActiveLink, link)} font-semibold ${'hover:' + accentTextClass}`}
           key={index}
           href={link.path}>
           {link.name}
