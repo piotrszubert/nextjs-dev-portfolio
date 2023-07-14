@@ -1,5 +1,6 @@
 import { ExternalLink } from 'lucide-react';
 import { siteConfig } from '@/config/site';
+import Link from 'next/link';
 
 const colorVariant = siteConfig.accentColor.colorVariant;
 const { accentTextClass, accentBorderClass } = siteConfig.accentColor.colorVariants[colorVariant];
@@ -12,18 +13,27 @@ export default function ProjectsList() {
         {projects.map((project, index) => (
             <div 
                 key={index}
-                className={`space-y-6 relative hover:cursor-pointer border-s-2 hover:bg-accent ${'hover:' + accentBorderClass} ${'hover:' + accentTextClass} rounded-xl p-3`}>
-                <div className="font-semibold text-lg text-foreground"> 
-                    {project.title}
-                </div>
-                <p className="text-muted-foreground text-sm">
-                    {project.description}
-                </p>
-                <div className="">
-                    <span className="flex gap-3">
-                        <ExternalLink/>
-                        {project.url}
-                    </span>
+                className={`relative hover:cursor-pointer border-s-2 hover:bg-accent ${'hover:' + accentBorderClass} ${'hover:' + accentTextClass} rounded-xl p-3`}>
+                {/* stretched link */}
+                <Link
+                    className="absolute inset-0"
+                    href={'https://' + project.url}
+                    target='_blank'
+                    >
+                </Link>
+                <div className="space-y-6">
+                    <div className="font-semibold text-lg text-foreground"> 
+                        {project.title}
+                    </div>
+                    <p className="text-muted-foreground text-sm">
+                        {project.description}
+                    </p>
+                    <div className="">
+                        <span className="flex gap-3">
+                            <ExternalLink/>
+                            {project.url}
+                        </span>
+                    </div>
                 </div>
             </div>
         ))}
