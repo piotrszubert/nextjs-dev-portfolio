@@ -20,22 +20,22 @@ const { accentTextClass } = siteConfig.accentColor.colorVariants[colorVariant];
 const links = [
     {
         icon: <Github/>,
-        href: '#',
+        href:  siteConfig.links.github,
         name: 'Github',
     },
     {
         icon: <Twitter/>,
-        href: '#',
+        href:  siteConfig.links.twitter,
         name: 'Twitter',
     },
     {
         icon: <Instagram/>,
-        href: '#',
+        href:  siteConfig.links.instagram,
         name: 'Instagram',
     },
     {
         icon: <Linkedin/>,
-        href: '#',
+        href:  siteConfig.links.linkedIn,
         name: 'LinkedIn',
     },
     {

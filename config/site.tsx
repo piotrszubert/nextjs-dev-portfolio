@@ -14,6 +14,8 @@ export const siteConfig = {
   links: {
     twitter: "https://twitter.com",
     github: "https://github.com",
+    linkedIn: "https://linkedin.com",
+    instagram: "https://instagram.com",
     email: "example@gmail.com"
   },
   projects: [
