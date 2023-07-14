@@ -7,6 +7,7 @@ import NewsletterCard from '@/components/newsletterCard'
 
 import { getSortedPostsData } from '@/lib/posts';
 import PostsList from '@/components/postsList'
+import Head from 'next/head'
 
 export async function getServerSideProps() {
   const allPostsData = getSortedPostsData(3);
@@ -28,6 +29,9 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home({allPostsData}: any) {
   return (
     <Layout>
+      <Head>
+        <title>Portfolio - Home</title>
+      </Head>
       <main
         className={`${inter.className} max-w-4xl mx-auto`}
       >

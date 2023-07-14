@@ -2,6 +2,7 @@ import Layout from "@/components/layout";
 import PageHero from "@/components/pageHero";
 import { getAllPostIds, getPostData } from '@/lib/posts';
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import Head from "next/head";
 
 const Heading2 = ({ children }: any) => {
   return <h2 className="border-b [&:not(:first-child)]:mt-6 pb-2 text-3xl text-foreground font-semibold tracking-tight transition-colors first:mt-0">{children}</h2>;
@@ -45,6 +46,9 @@ export async function getStaticProps({ params }: any) {
 export default function Post({ postData }: any) {
   return(
     <Layout>
+      <Head>
+        <title>Portfolio - Blog - {postData.heading}</title>
+      </Head>
       <main>
         <PageHero
           heading={postData.heading} 

@@ -1,9 +1,10 @@
 import { Inter } from 'next/font/google'
-import { Button } from '@/components/ui/button'
 import Layout from '@/components/layout'
 import PageHero from '@/components/pageHero'
 import PostsList from '../../components/postsList'
 import { getSortedPostsData } from '@/lib/posts'
+import Head from 'next/head'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export async function getServerSideProps() {
@@ -18,6 +19,9 @@ export async function getServerSideProps() {
 export default function Blog({allPostsData}: any) {
   return (
     <Layout>
+      <Head>
+        <title>Portfolio - Blog</title>
+      </Head>
       <main
         className={`${inter.className} max-w-4xl mx-auto`}
       >

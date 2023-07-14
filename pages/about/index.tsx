@@ -5,10 +5,14 @@ import LinkList from '@/components/linksList'
 import Image from 'next/image'
 import aboutImage from '@/public/about-image.jpg'
 const inter = Inter({ subsets: ['latin'] })
+import Head from 'next/head'
 
 export default function About() {
   return (
     <Layout>
+      <Head>
+        <title>Portfolio - About</title>
+      </Head>
       <main
         className={`${inter.className} max-w-4xl mx-auto`}
       >
