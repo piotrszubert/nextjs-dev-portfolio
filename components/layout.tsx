@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import Header from './header';
 import Footer from './footer';
+import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ['latin'] })
 
 type LayoutProps = {
@@ -14,6 +15,7 @@ export default function Layout({children}: LayoutProps) {
             <main className={`${inter.className}`}>
                 {children}
             </main>
+            <Toaster/>
             <Footer/>
         </div>
     );

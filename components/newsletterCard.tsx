@@ -8,9 +8,11 @@ import {
 } from "@/components/ui/card"
 import { Mail } from 'lucide-react';
 import { Button } from "@/components/ui/button";
-
+import { useToast } from "@/components/ui/use-toast"
 
 export default function NewsletterCard() {
+  const { toast } = useToast();
+
   return (
     <div>
         <Card>
@@ -29,7 +31,12 @@ export default function NewsletterCard() {
           <CardContent>
             <div className="flex gap-3">
               <Input type="email" placeholder="example@mail.com"/>
-              <Button>
+              <Button onClick={() => {
+                toast({
+                  title: "Thanks for clicking",
+                  description: 'There is no newsletter, yet.'
+                })
+              }}>
                 Join
               </Button>
             </div>
