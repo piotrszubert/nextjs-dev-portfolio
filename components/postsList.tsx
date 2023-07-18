@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { siteConfig } from '@/config/site';
 import { Separator } from '@/components/ui/separator';
 import Link from 'next/link';
@@ -23,7 +23,7 @@ export default function PostsList({ posts }: PostsListProps) {
   return (
     <div className="space-y-6">
       {posts.map(({ id, date, heading, subheading }: PostType, index: number) => (
-        <>
+        <Fragment key={index}>
           <div key={id} className='flex gap-3 flex-wrap sm:flex-nowrap'>
             <Link
               className='max-w-lg'
@@ -58,7 +58,7 @@ export default function PostsList({ posts }: PostsListProps) {
             <div className="mt-6">
               <Separator className='my-6' />
             </div>)}
-        </>
+        </Fragment>
       ))}
     </div>
   );
