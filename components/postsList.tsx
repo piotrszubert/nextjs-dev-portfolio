@@ -9,7 +9,7 @@ const { accentTextClass, accentBorderClass } = siteConfig.accentColor.colorVaria
 type PostType = {
   id?: number,
   date?: string,
-  heading?: string, 
+  heading?: string,
   subheading?: string
 }
 
@@ -21,29 +21,31 @@ export default function PostsList({ posts }: PostsListProps) {
   return (
     <div className="space-y-6">
       {posts.map(({ id, date, heading, subheading }: PostType, index: number) => (
-        <div key={id}>
-          <Link
-            href={`blog/posts/${id}`}
+        <>
+          <div key={id} className='max-w-lg'>
+            <Link
+              href={`blog/posts/${id}`}
             >
-            <div 
-              className={`space-y-3 relative hover:cursor-pointer hover:bg-accent ${'hover:' + accentTextClass} rounded-xl p-3`}
-            >
-              <div className="font-semibold tracking-tight text-lg max-w-lg"> 
+              <div
+                className={`space-y-3 relative hover:cursor-pointer hover:bg-accent ${'hover:' + accentTextClass} rounded-xl p-3`}
+              >
+                <div className="font-semibold tracking-tight text-lg">
                   {heading}
-              </div>
-              <p className="text-xs text-muted-foreground font-semibold">
+                </div>
+                <p className="text-xs text-muted-foreground font-semibold">
                   {date}
-              </p>
-              <p className="flex gap-3 text-muted-foreground text-sm max-w-lg">
+                </p>
+                <p className="flex gap-3 text-muted-foreground text-sm">
                   {subheading}
-              </p>
-            </div>
-          </Link>
-          {index !== posts.length - 1 && ( 
+                </p>
+              </div>
+            </Link>
+          </div>
+          {index !== posts.length - 1 && (
             <div className="mt-6">
-              <Separator className='my-6'/>
+              <Separator className='my-6' />
             </div>)}
-        </div>
+        </>
       ))}
     </div>
   );
