@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Share2, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 const colorVariant = siteConfig.accentColor.colorVariant;
-const { accentTextClass, accentBorderClass } = siteConfig.accentColor.colorVariants[colorVariant];
+const { accentTextClass } = siteConfig.accentColor.colorVariants[colorVariant];
 
 type PostType = {
   id?: number,
