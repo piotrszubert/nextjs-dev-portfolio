@@ -7,6 +7,8 @@ import { Button } from '@/components/ui/button';
 const colorVariant = siteConfig.accentColor.colorVariant;
 const { accentTextClass } = siteConfig.accentColor.colorVariants[colorVariant];
 
+import ShareButton from './shareButton';
+
 type PostType = {
   id?: number,
   date?: string,
@@ -51,6 +53,7 @@ export default function PostsList({ posts }: PostsListProps) {
                 <Button variant="ghost" size="icon">
                   <Heart/>
                 </Button>
+                {/* <ShareButton url={`/blog/posts/${id}`} title={heading}/> */}
               </div>
             </div>
           </div>
