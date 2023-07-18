@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { siteConfig } from '@/config/site';
 import { Separator } from '@/components/ui/separator';
 import Link from 'next/link';
-
+import { Share2, Heart } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 const colorVariant = siteConfig.accentColor.colorVariant;
-const { accentTextClass, accentBorderClass } = siteConfig.accentColor.colorVariants[colorVariant];
+const { accentTextClass } = siteConfig.accentColor.colorVariants[colorVariant];
+
+import ShareButton from './shareButton';
 
 type PostType = {
   id?: number,
   date?: string,
-  heading?: string, 
+  heading?: string,
   subheading?: string
 }
 
@@ -18,32 +21,47 @@ type PostsListProps = {
 }
 
 export default function PostsList({ posts }: PostsListProps) {
+  
   return (
     <div className="space-y-6">
       {posts.map(({ id, date, heading, subheading }: PostType, index: number) => (
-        <div key={id}>
-          <Link
-            href={`blog/posts/${id}`}
+        <Fragment key={index}>
+          <div key={id} className='flex gap-3 flex-wrap sm:flex-nowrap'>
+            <Link
+              className='max-w-lg'
+              href={`blog/posts/${id}`}
             >
-            <div 
-              className={`space-y-3 relative hover:cursor-pointer hover:bg-accent ${'hover:' + accentTextClass} rounded-xl p-3`}
-            >
-              <div className="font-semibold tracking-tight text-lg max-w-lg"> 
+              <div
+                className={`space-y-3 relative hover:cursor-pointer hover:bg-accent ${'hover:' + accentTextClass} rounded-xl p-3`}
+              >
+                <div className="font-semibold tracking-tight text-lg">
                   {heading}
-              </div>
-              <p className="text-xs text-muted-foreground font-semibold">
+                </div>
+                <p className="text-xs text-muted-foreground font-semibold">
                   {date}
-              </p>
-              <p className="flex gap-3 text-muted-foreground text-sm max-w-lg">
+                </p>
+                <p className="flex gap-3 text-muted-foreground text-sm">
                   {subheading}
-              </p>
+                </p>
+              </div>
+            </Link>
+            <div className='grid place-items-start ps-3 sm:ps-0 sm:place-items-center flex-1'>
+              <div className='flex gap-3'>
+                <Button variant="ghost" size="icon">
+                  <Share2/>
+                </Button>
+                <Button variant="ghost" size="icon">
+                  <Heart/>
+                </Button>
+                {/* <ShareButton url={`/blog/posts/${id}`} title={heading}/> */}
+              </div>
             </div>
-          </Link>
-          {index !== posts.length - 1 && ( 
+          </div>
+          {index !== posts.length - 1 && (
             <div className="mt-6">
-              <Separator className='my-6'/>
+              <Separator className='my-6' />
             </div>)}
-        </div>
+        </Fragment>
       ))}
     </div>
   );
