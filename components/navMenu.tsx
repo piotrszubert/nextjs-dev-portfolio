@@ -8,7 +8,7 @@ const links = [
   { name: 'About', path: '/about' },
   { name: 'Projects', path: '/projects' },
   { name: 'Blog', path: '/blog' },
-  { name: 'Uses', path: '/uses' },
+  // { name: 'Uses', path: '/uses' },
 ];
 
 const colorVariant = siteConfig.accentColor.colorVariant;
