@@ -53,7 +53,7 @@ export default function PostsList({ posts }: PostsListProps) {
                 <Button variant="ghost" size="icon">
                   <Heart/>
                 </Button>
-                {/* <ShareButton url={`/blog/posts/${id}`} title={heading}/> */}
+                <ShareButton url={`/blog/posts/${id}`} title={heading}/>
               </div>
             </div>
           </div>
