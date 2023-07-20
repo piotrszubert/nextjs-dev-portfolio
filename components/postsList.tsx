@@ -45,7 +45,7 @@ export default function PostsList({ posts }: PostsListProps) {
                 </p>
               </div>
             </Link>
-            <div className='grid place-items-start ps-3 sm:ps-0 sm:place-items-center flex-1'>
+            {/* <div className='grid place-items-start ps-3 sm:ps-0 sm:place-items-center flex-1'>
               <div className='flex gap-3'>
                 <Button variant="ghost" size="icon">
                   <Share2/>
@@ -55,7 +55,7 @@ export default function PostsList({ posts }: PostsListProps) {
                 </Button>
                 <ShareButton url={`/blog/posts/${id}`} title={heading}/>
               </div>
-            </div>
+            </div> */}
           </div>
           {index !== posts.length - 1 && (
             <div className="mt-6">
