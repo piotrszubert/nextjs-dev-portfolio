@@ -8,6 +8,7 @@ import NewsletterCard from '@/components/newsletterCard'
 import { getSortedPostsData } from '@/lib/posts';
 import PostsList from '@/components/postsList'
 import Head from 'next/head'
+import { SiteConfig, siteConfig } from '@/config/site'
 
 export async function getServerSideProps() {
   const allPostsData = getSortedPostsData(3);
@@ -37,8 +38,8 @@ export default function Home({allPostsData}: any) {
       >
         <div className="max-w-3xl">
           <PageHero
-            heading='Software developer, founder and investor.'
-            subheading="I'm [Your Name], a software developer and entrepreneur with a passion for innovation and investment. As the founder and CEO of [Your Company Name], I strive to create groundbreaking technologies and opportunities that drive the future of technology and empower individuals to achieve their financial goals"
+            heading={siteConfig.pages.home.heading}
+            subheading={siteConfig.pages.home.subheading}
           >
             <LinkList
               nameVisible={false}
