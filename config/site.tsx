@@ -24,6 +24,24 @@ export const siteConfig = {
     {title: 'FontTurbo', description: 'Modern way to manage fonts on website', url: 'font.turbo'},
     {title: 'ColorTurbo', description: 'Modern, fastest way to create color pallettes', url: 'color.turbo'},
   ],
+  pages: {
+    home: {
+      heading: 'Software developer, founder and investor.',
+      subheading: 'I am [Your Name], a software developer and entrepreneur with a passion for innovation and investment. As the founder and CEO of [Your Company Name], I strive to create groundbreaking technologies and opportunities that drive the future of technology and empower individuals to achieve their financial goals'
+    },
+    about: {
+      heading: '',
+      subheading: ''
+    },
+    projects: {
+      heading: 'Harmonizing design and functionality in my web development projects.',
+      subheading: 'I have worked on tons of little projects over the years but these are the ones that I am most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.'
+    },
+    blog: {
+      heading: 'Writing on software design, company building, and the investing.',
+      subheading: 'All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.'
+    }
+  },
   accentColor: {
     colorVariant: 'purple',
     colorVariants: {
