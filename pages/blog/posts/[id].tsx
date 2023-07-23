@@ -4,6 +4,7 @@ import { getAllPostIds, getPostData } from '@/lib/posts';
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import Head from "next/head";
 
+// todo: use correct types
 const Heading2 = ({ children }: any) => {
   return <h2 className="border-b [&:not(:first-child)]:mt-6 pb-2 text-3xl text-foreground font-semibold tracking-tight transition-colors first:mt-0">{children}</h2>;
 };

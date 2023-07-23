@@ -16,7 +16,7 @@ export async function getServerSideProps() {
     },
   };
 }
-
+// todo: use correct types
 export default function Blog({allPostsData}: any) {
   return (
     <Layout>
