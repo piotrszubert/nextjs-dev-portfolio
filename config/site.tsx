@@ -12,21 +12,18 @@ export const siteConfig = {
   description:
     "Description.",
   links: {
-    twitter: "https://twitter.com",
-    github: "https://github.com",
-    linkedIn: "https://linkedin.com",
-    instagram: "https://instagram.com",
-    email: "example@gmail.com"
+    twitter: "#",
+    github: "https://github.com/piotrszubert",
+    linkedIn: "https://linkedin.com/in/piotr-szubert-312506201/",
+    instagram: "#",
+    email: "piotr.szubert777@gmail.com"
   },
   projects: [
-    {title: 'Opimage', description: 'High performance web images optimization library', url: 'opimage.io'},
-    {title: 'Portfolio', description: 'Highest quality personal portfolio template', url: 'portfolio.io'},
-    {title: 'FontTurbo', description: 'Modern way to manage fonts on website', url: 'font.turbo'},
-    {title: 'ColorTurbo', description: 'Modern, fastest way to create color pallettes', url: 'color.turbo'},
+    {title: 'Dot. Landing page', description: 'Example landing page for AI SaaS company', url: 'landing-2-of-30.vercel.app'},
   ],
   pages: {
     home: {
-      heading: 'Software developer, founder and investor.',
+      heading: 'Software developer, investor and car enthusiast.',
       subheading: 'I am [Your Name], a software developer and entrepreneur with a passion for innovation and investment. As the founder and CEO of [Your Company Name], I strive to create groundbreaking technologies and opportunities that drive the future of technology and empower individuals to achieve their financial goals'
     },
     about: {
