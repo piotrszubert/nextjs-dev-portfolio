@@ -9,10 +9,10 @@ import {
 import { FileDown, Briefcase } from 'lucide-react';
 
 const workTimeline = [
-  { company: 'Portfolio', position: 'CEO', start: '2022', end: 'Present' },
-  { company: 'Facebook', position: 'Teamleader', start: '2020', end: '2022' },
-  { company: 'Snapchat', position: 'Product designer', start: '2018', end: '2020' },
-  { company: 'Tesla', position: 'Software developer', start: '2016', end: '2018' },
+  { company: 'Reklamowe 24', position: 'Software developer', start: 'April 2021', end: 'Present' },
+  { company: 'Optimus', position: 'Intern', start: 'June 2020', end: 'July 2022' },
+  { company: 'Domino', position: 'Intern', start: 'January 2017', end: 'April 2017' },
+  { company: 'Medana Pharma S.A', position: 'Intern', start: 'May 2016', end: 'June 2016' },
 ];
 
 export default function WorkCard() {
