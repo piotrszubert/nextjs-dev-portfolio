@@ -20,6 +20,8 @@ export const siteConfig = {
   },
   projects: [
     {title: 'Dot. Landing page', description: 'Example landing page for AI SaaS company', url: 'landing-2-of-30.vercel.app'},
+    {title: 'Update. Changelog site', description: 'Example Neo-Brutalism style changelog site', url: 'update-changelog-template.vercel.app'},
+    {title: 'TalkSquare. Podcast site', description: 'Example podcast site created with Next.js and Tailwind', url: 'talk-square.vercel.app'},
   ],
   pages: {
     home: {
