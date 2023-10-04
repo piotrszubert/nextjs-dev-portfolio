@@ -49,7 +49,7 @@ export default function Home({allPostsData}: any) {
             <PostsList posts={allPostsData}/>
           </div>  
           <div className='space-y-6 md:ps-10'>
-            <NewsletterCard/>
+            {/* <NewsletterCard/> */}
             <WorkCard/>
           </div>
         </div>
