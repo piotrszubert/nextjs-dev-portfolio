@@ -2,12 +2,8 @@ import React, { Fragment } from 'react';
 import { siteConfig } from '@/config/site';
 import { Separator } from '@/components/ui/separator';
 import Link from 'next/link';
-import { Share2, Heart } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 const colorVariant = siteConfig.accentColor.colorVariant;
 const { accentTextClass } = siteConfig.accentColor.colorVariants[colorVariant];
-
-import ShareButton from './shareButton';
 
 type PostType = {
   id?: number,
@@ -45,17 +41,6 @@ export default function PostsList({ posts }: PostsListProps) {
                 </p>
               </div>
             </Link>
-            {/* <div className='grid place-items-start ps-3 sm:ps-0 sm:place-items-center flex-1'>
-              <div className='flex gap-3'>
-                <Button variant="ghost" size="icon">
-                  <Share2/>
-                </Button>
-                <Button variant="ghost" size="icon">
-                  <Heart/>
-                </Button>
-                <ShareButton url={`/blog/posts/${id}`} title={heading}/>
-              </div>
-            </div> */}
           </div>
           {index !== posts.length - 1 && (
             <div className="mt-6">
