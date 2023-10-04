@@ -23,16 +23,16 @@ const links = [
         href:  siteConfig.links.github,
         name: 'Github',
     },
-    {
-        icon: <Twitter/>,
-        href:  siteConfig.links.twitter,
-        name: 'Twitter',
-    },
-    {
-        icon: <Instagram/>,
-        href:  siteConfig.links.instagram,
-        name: 'Instagram',
-    },
+    // {
+    //     icon: <Twitter/>,
+    //     href:  siteConfig.links.twitter,
+    //     name: 'Twitter',
+    // },
+    // {
+    //     icon: <Instagram/>,
+    //     href:  siteConfig.links.instagram,
+    //     name: 'Instagram',
+    // },
     {
         icon: <Linkedin/>,
         href:  siteConfig.links.linkedIn,

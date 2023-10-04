@@ -12,34 +12,33 @@ export const siteConfig = {
   description:
     "Description.",
   links: {
-    twitter: "https://twitter.com",
-    github: "https://github.com",
-    linkedIn: "https://linkedin.com",
-    instagram: "https://instagram.com",
-    email: "example@gmail.com"
+    twitter: "#",
+    github: "https://github.com/piotrszubert",
+    linkedIn: "https://linkedin.com/in/piotr-szubert-312506201/",
+    instagram: "#",
+    email: "piotr.szubert777@gmail.com"
   },
   projects: [
-    {title: 'Opimage', description: 'High performance web images optimization library', url: 'opimage.io'},
-    {title: 'Portfolio', description: 'Highest quality personal portfolio template', url: 'portfolio.io'},
-    {title: 'FontTurbo', description: 'Modern way to manage fonts on website', url: 'font.turbo'},
-    {title: 'ColorTurbo', description: 'Modern, fastest way to create color pallettes', url: 'color.turbo'},
+    {title: 'Dot. Landing page', description: 'Example landing page for AI SaaS company', url: 'landing-2-of-30.vercel.app'},
+    {title: 'Update. Changelog site', description: 'Example Neo-Brutalism style changelog site', url: 'update-changelog-template.vercel.app'},
+    {title: 'TalkSquare. Podcast site', description: 'Example podcast site created with Next.js and Tailwind', url: 'talk-square.vercel.app'},
   ],
   pages: {
     home: {
-      heading: 'Software developer, founder and investor.',
-      subheading: 'I am [Your Name], a software developer and entrepreneur with a passion for innovation and investment. As the founder and CEO of [Your Company Name], I strive to create groundbreaking technologies and opportunities that drive the future of technology and empower individuals to achieve their financial goals'
+      heading: 'Software developer, investor and car enthusiast.',
+      subheading: `Hey there, I'm Piotr, a software developer with a passion for programming, innovation and investment.`
     },
     about: {
       heading: '',
       subheading: ''
     },
     projects: {
-      heading: 'Harmonizing design and functionality in my web development projects.',
-      subheading: 'I have worked on tons of little projects over the years but these are the ones that I am most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.'
+      heading: 'Web Development Creations.',
+      subheading: 'I have worked on tons of little projects over the years but these are the ones that I am most proud of. All of listed below are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved. Most of these projects are frontend side, but recently i started learning backend technologies to become fullstack developer, so stay up to date!'
     },
     blog: {
-      heading: 'Writing on software design, company building, and the investing.',
-      subheading: 'All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.'
+      heading: 'Exploring the World of Tech and Development',
+      subheading: 'All of my thoughts on programming, technologies, hardware, and more, collected in chronological order.'
     }
   },
   accentColor: {

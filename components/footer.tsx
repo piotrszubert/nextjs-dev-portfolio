@@ -10,8 +10,7 @@ export default function Footer() {
                 />
             </div>
             <div className="text-muted-foreground">
-                &copy; 2023 Portfolio.
-                All rights reserved. 
+                &copy; ps777 2023
             </div>
         </div>
     </footer>

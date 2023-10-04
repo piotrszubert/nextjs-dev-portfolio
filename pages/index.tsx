@@ -19,14 +19,10 @@ export async function getServerSideProps() {
   };
 }
 
-type postType = {
-  id?: number,
-  date?: string,
-  title?: string
-}
 
 const inter = Inter({ subsets: ['latin'] })
 
+// todo: use correct types
 export default function Home({allPostsData}: any) {
   return (
     <Layout>
@@ -53,7 +49,7 @@ export default function Home({allPostsData}: any) {
             <PostsList posts={allPostsData}/>
           </div>  
           <div className='space-y-6 md:ps-10'>
-            <NewsletterCard/>
+            {/* <NewsletterCard/> */}
             <WorkCard/>
           </div>
         </div>

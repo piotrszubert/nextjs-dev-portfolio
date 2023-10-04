@@ -3,7 +3,10 @@ import PageHero from "@/components/pageHero";
 import { getAllPostIds, getPostData } from '@/lib/posts';
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import Head from "next/head";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
+// todo: use correct types
 const Heading2 = ({ children }: any) => {
   return <h2 className="border-b [&:not(:first-child)]:mt-6 pb-2 text-3xl text-foreground font-semibold tracking-tight transition-colors first:mt-0">{children}</h2>;
 };
@@ -66,6 +69,12 @@ export default function Post({ postData }: any) {
           }}>
             {postData.content}
           </ReactMarkdown>
+        
+        <div className="mt-16 border-t grid place-items-center">
+          <Button className="mt-16" asChild>
+            <Link href="/blog">Check out more posts</Link>
+          </Button>
+        </div>
       </main>
     </Layout>
   );
