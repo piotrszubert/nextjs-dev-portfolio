@@ -24,19 +24,19 @@ export const siteConfig = {
   pages: {
     home: {
       heading: 'Software developer, investor and car enthusiast.',
-      subheading: 'I am [Your Name], a software developer and entrepreneur with a passion for innovation and investment. As the founder and CEO of [Your Company Name], I strive to create groundbreaking technologies and opportunities that drive the future of technology and empower individuals to achieve their financial goals'
+      subheading: `Hey there, I'm Piotr, a software developer with a passion for programming, innovation and investment.`
     },
     about: {
       heading: '',
       subheading: ''
     },
     projects: {
-      heading: 'Harmonizing design and functionality in my web development projects.',
-      subheading: 'I have worked on tons of little projects over the years but these are the ones that I am most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.'
+      heading: 'Web Development Creations.',
+      subheading: 'I have worked on tons of little projects over the years but these are the ones that I am most proud of. All of listed below are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved. Most of these projects are frontend side, but recently i started learning backend technologies to become fullstack developer, so stay up to date!'
     },
     blog: {
-      heading: 'Writing on software design, company building, and the investing.',
-      subheading: 'All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.'
+      heading: 'Exploring the World of Tech and Development',
+      subheading: 'All of my thoughts on programming, technologies, hardware, and more, collected in chronological order.'
     }
   },
   accentColor: {
