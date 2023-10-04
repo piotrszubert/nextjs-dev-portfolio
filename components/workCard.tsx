@@ -10,7 +10,7 @@ import { FileDown, Briefcase } from 'lucide-react';
 
 const workTimeline = [
   { company: 'Reklamowe 24', position: 'Software developer', start: 'April 2021', end: 'Present' },
-  { company: 'Optimus', position: 'Intern', start: 'June 2020', end: 'July 2022' },
+  { company: 'Optimus', position: 'Intern', start: 'June 2020', end: 'July 2020' },
   { company: 'Domino', position: 'Intern', start: 'January 2017', end: 'April 2017' },
   { company: 'Medana Pharma S.A', position: 'Intern', start: 'May 2016', end: 'June 2016' },
 ];
