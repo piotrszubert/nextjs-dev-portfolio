@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <header className="w-full sticky top-0 border-b bg-background py-4 z-10">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center max-w-4xl mx-auto">
         <div>
           <ThemeToggle/>
         </div>

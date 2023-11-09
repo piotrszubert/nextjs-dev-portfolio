@@ -28,7 +28,7 @@ export default function PostsList({ posts }: PostsListProps) {
               href={`blog/posts/${id}`}
             >
               <div
-                className={`space-y-3 relative hover:cursor-pointer hover:bg-accent ${'hover:' + accentTextClass} rounded-xl p-3`}
+                className={`space-y-3 relative hover:cursor-pointer hover:bg-accent ${'hover:' + accentTextClass} rounded-xl p-3 -m-3`}
               >
                 <div className="font-semibold tracking-tight text-lg">
                   {heading}
