@@ -10,13 +10,15 @@ type LayoutProps = {
 
 export default function Layout({children}: LayoutProps) {
     return(
-        <div className='max-w-4xl mx-auto px-4 lg:px-2'>
+        <div className='px-4 lg:px-2'>
             <Header/>
-            <main className={`${inter.className}`}>
-                {children}
-            </main>
-            <Toaster/>
-            <Footer/>
+            <div className="max-w-4xl mx-auto">
+                <main className={`${inter.className}`}>
+                    {children}
+                </main>
+                <Toaster/>
+                <Footer/>
+            </div>
         </div>
     );
 }
