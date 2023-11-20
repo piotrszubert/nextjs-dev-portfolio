@@ -26,7 +26,7 @@ export const siteConfig = {
   pages: {
     home: {
       heading: 'Software developer, investor and car enthusiast.',
-      subheading: `Hey there, I'm Piotr, a software developer with a passion for programming, innovation and investment.`
+      subheading: `Hey there, I'm a software developer with a passion for programming, innovation and investment.`
     },
     about: {
       heading: '',
