@@ -1,7 +1,7 @@
 ---
-heading: 'Choosing the Right Rendering Strategy: Static Generation vs. Server-Side Rendering'
-subheading: 'Understanding when to use Static Generation or Server-Side Rendering in your Next.js application'
-date: '2023-07-13'
+title: Choosing the Right Rendering Strategy Static Generation vs. Server-Side Rendering
+description: Understanding when to use Static Generation or Server-Side Rendering in your Next.js application
+date: 2023-07-13
 ---
 
 ## Overview

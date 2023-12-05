@@ -1,7 +1,7 @@
 ---
-heading: 'Building Responsive Websites: Principles and Techniques for Seamless Adaptation'
-subheading: 'Learn the principles and techniques of responsive web design to create websites that adapt seamlessly across different devices'
-date: '2023-03-15'
+title: Building Responsive Websites Principles and Techniques for Seamless Adaptation
+description: Learn the principles and techniques of responsive web design to create websites that adapt seamlessly across different devices
+date: 2023-03-15
 ---
 
 
