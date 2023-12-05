@@ -23,7 +23,7 @@ export async function getServerSideProps() {
 const inter = Inter({ subsets: ['latin'] })
 
 // todo: use correct types
-export default function Home({allPostsData}: any) {
+export default function HomeOld({allPostsData}: any) {
   return (
     <Layout>
       <Head>
