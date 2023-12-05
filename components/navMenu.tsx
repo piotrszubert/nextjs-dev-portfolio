@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import { siteConfig } from '@/config/site';
 
 const links = [
@@ -26,24 +26,24 @@ type linktType = {
 };
 
 export default function NavMenu({ flexDirection = 'flex-row', gap = 'gap-3', markActiveLink = true }: NavMenuProps) {
-  const router = useRouter();
+  // const router = useRouter();
 
 
-  const markLink = (markActiveLink: boolean, link: linktType) => {
-    if(markActiveLink) {
-      if(router.pathname === link.path || router.pathname.startsWith('/blog/') && link.name === "Blog") {
-        return "underline";
-      } else {
-        return '';
-      }
-    }
-  }
+  // const markLink = (markActiveLink: boolean, link: linktType) => {
+  //   if(markActiveLink) {
+  //     if(router.pathname === link.path || router.pathname.startsWith('/blog/') && link.name === "Blog") {
+  //       return "underline";
+  //     } else {
+  //       return '';
+  //     }
+  //   }
+  // }
 
   return (
     <nav className={`flex justify-evenly ${flexDirection} ${gap}`}>
       {links.map((link, index) => (
         <Link
-          className={`${markLink(markActiveLink, link)} font-semibold ${'hover:' + accentTextClass}`}
+          className={`font-semibold ${'hover:' + accentTextClass}`}
           key={index}
           href={link.path}>
           {link.name}
