@@ -1,21 +1,11 @@
-import { Inter } from 'next/font/google'
-import Layout from '@/components/layout'
-import PageHero from '@/components/pageHero'
-import LinkList from '@/components/linksList'
-import Image from 'next/image'
+import PageHero from "@/components/pageHero";
+import Image from "next/image";
+import LinkList from "@/components/linksList";
 import aboutImage from '@/public/about-image.jpg'
-const inter = Inter({ subsets: ['latin'] })
-import Head from 'next/head'
 
 export default function About() {
-  return (
-    <Layout>
-      <Head>
-        <title>Portfolio - About</title>
-      </Head>
-      <main
-        className={`${inter.className} max-w-4xl mx-auto`}
-      >
+    return(
+        <main>
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div>
             <PageHero
@@ -48,6 +38,5 @@ export default function About() {
           </div>
         </div>
       </main>
-    </Layout>
-  )
+    );
 }
