@@ -1,23 +1,23 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from "react"
 
 type PageHeroProps = {
-  heading?: string;
-  subheading?: string;
-  children?: ReactNode;
-};
+  heading?: string
+  subheading?: string
+  children?: ReactNode
+}
 
-export default function PageHero({ heading = 'Default heading', subheading = 'Default subheading', children }: PageHeroProps) {
+export default function PageHero({
+  heading = "Default heading",
+  subheading = "Default subheading",
+  children,
+}: PageHeroProps) {
   return (
     <>
-      <div className="py-16 max-w-2xl">
-        <h1 className='font-extrabold tracking-tight text-5xl'>{heading}</h1>
-        <p className='leading-7 mt-6 text-muted-foreground'>{subheading}</p>
-        {children && (
-          <div className='mt-6'>
-            {children}
-          </div>
-        )}
+      <div className="max-w-2xl py-16">
+        <h1 className="text-5xl font-extrabold tracking-tight">{heading}</h1>
+        <p className="mt-6 leading-7 text-muted-foreground">{subheading}</p>
+        {children && <div className="mt-6">{children}</div>}
       </div>
     </>
-  );
+  )
 }

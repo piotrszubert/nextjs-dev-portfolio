@@ -16,7 +16,6 @@ const mdxComponents: MDXComponents = {
   ),
 }
 
-
 export const generateStaticParams = async () =>
   allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
 
@@ -25,7 +24,6 @@ export const generateMetadata = ({ params }: { params: { slug: string } }) => {
   if (!post) notFound()
   return { title: `${post.title}` }
 }
-
 
 export default function PostPage({ params }: { params: { slug: string } }) {
   // Find the post for the current page.
