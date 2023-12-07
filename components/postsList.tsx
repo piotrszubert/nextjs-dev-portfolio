@@ -11,7 +11,7 @@ const { accentTextClass } = siteConfig.accentColor.colorVariants[colorVariant];
 
 function PostCard(post: Post) {
   return (
-    <div className={`space-y-3 relative hover:cursor-pointer hover:bg-accent ${'hover:' + accentTextClass} rounded-xl p-3 -m-3`}>
+    <div className={`space-y-3 relative hover:cursor-pointer hover:bg-accent ${'hover:' + accentTextClass} rounded-xl p-3 -m-3 max-w-xl`}>
       <h2 className="mb-1 text-xl">
         <Link href={post.url}>
           {post.title}
