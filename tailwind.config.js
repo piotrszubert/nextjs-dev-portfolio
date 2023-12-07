@@ -2,16 +2,17 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-    './config/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+    "./config/**/*.{ts,tsx}",
+  ],
   safelist: [
     {
-      pattern: /(text|border)-(lime|green|blue|indigo|orange|violet|red|amber|yellow|emerald|teal|cyan|light-blue|indigo|purple|fuchsia|pink|rose)-(400)/,
-      variants: ['hover'],
+      pattern:
+        /(text|border)-(lime|green|blue|indigo|orange|violet|red|amber|yellow|emerald|teal|cyan|light-blue|indigo|purple|fuchsia|pink|rose)-(400)/,
+      variants: ["hover"],
     },
   ],
   theme: {
@@ -79,5 +80,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 }

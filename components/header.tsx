@@ -1,33 +1,40 @@
-import { Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button'
-import NavMenu from './navMenu';
-import { ThemeToggle } from './themeToggle';
-import { useState } from 'react';
+"use client"
+
+import { Menu, X } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import NavMenu from "./navMenu"
+import { ThemeToggle } from "./themeToggle"
+import { useState } from "react"
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
 
   return (
-    <header className="w-full sticky top-0 border-b bg-background py-4 z-10">
-      <div className="flex justify-between items-center max-w-4xl mx-auto">
+    <header className="sticky top-0 z-10 w-full border-b bg-background py-4">
+      <div className="mx-auto flex max-w-4xl items-center justify-between">
         <div>
-          <ThemeToggle/>
+          <ThemeToggle />
         </div>
-        <div className='hidden md:block'>
-          <NavMenu/>
+        <div className="hidden md:block">
+          <NavMenu />
         </div>
-        <div className='md:hidden'>
-          <Button variant="ghost" size="icon" className='md:hidden' onClick={toggleMenu}>
-            {isOpen ? <X/> : <Menu />}
+        <div className="md:hidden">
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            onClick={toggleMenu}
+          >
+            {isOpen ? <X /> : <Menu />}
           </Button>
         </div>
       </div>
       {isOpen && (
         <div className="mt-2 flex flex-col items-center">
-          <NavMenu flexDirection='flex-col' gap='gap-3' />
+          <NavMenu flexDirection="flex-col" gap="gap-3" />
         </div>
       )}
     </header>
