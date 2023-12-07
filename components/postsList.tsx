@@ -15,8 +15,9 @@ function PostCard(post: Post) {
         "hover:" + accentTextClass
       } -m-3 max-w-xl rounded-xl p-3`}
     >
+      <Link className="absolute inset-0" href={post.url}></Link>
       <h2 className="mb-1 text-xl">
-        <Link href={post.url}>{post.title}</Link>
+          {post.title}
       </h2>
       <time
         dateTime={post.date}
