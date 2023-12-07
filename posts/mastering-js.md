@@ -1,7 +1,7 @@
 ---
 title: Mastering JavaScript 10 Essential Concepts Every Frontend Developer Should Know
 description: Level up your frontend development skills by mastering the fundamental concepts of JavaScript
-date: 2023-02-05
+date: '2023-02-05'
 ---
 ## Overview
 

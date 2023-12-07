@@ -1,7 +1,7 @@
 ---
 title: Optimizing Frontend Performance Strategies, Tips, and Tools for Faster Web Experiences
 description: Discover strategies, tips, and tools to optimize the performance of your frontend code and deliver fast and efficient web experiences
-date: 2023-04-20
+date: '2023-04-20'
 ---
 
 ## Overview
