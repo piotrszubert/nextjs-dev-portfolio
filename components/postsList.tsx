@@ -16,7 +16,7 @@ function PostCard(post: Post) {
       } -m-3 max-w-xl rounded-xl p-3`}
     >
       <Link className="absolute inset-0" href={post.url}></Link>
-      <h2 className="mb-1 text-xl">
+      <h2 className="mb-1 text-xl font-bold">
           {post.title}
       </h2>
       <time
