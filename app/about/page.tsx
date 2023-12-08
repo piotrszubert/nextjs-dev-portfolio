@@ -1,6 +1,6 @@
-import PageHero from "@/components/pageHero"
+import { PageHero } from "@/components/pageHero"
 import Image from "next/image"
-import LinkList from "@/components/linksList"
+import { LinkList } from "@/components/linksList"
 import aboutImage from "@/public/about-image.jpg"
 
 export default function About() {

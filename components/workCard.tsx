@@ -35,7 +35,7 @@ const workTimeline = [
   },
 ]
 
-export default function WorkCard() {
+export const WorkCard = () => {
   return (
     <div>
       <Card>

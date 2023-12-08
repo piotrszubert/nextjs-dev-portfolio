@@ -39,11 +39,11 @@ const links = [
   },
 ]
 
-export default function LinkList({
+export const LinkList = ({
   nameVisible = true,
   flexDirectionClass = "flex-col",
   paddingClass = "p-6",
-}: LinkListProps) {
+}: LinkListProps) => {
   return (
     <div className={`${paddingClass}`}>
       <ul className={`flex ${flexDirectionClass} gap-3`}>

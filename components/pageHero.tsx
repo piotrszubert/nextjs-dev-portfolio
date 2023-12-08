@@ -6,11 +6,11 @@ type PageHeroProps = {
   children?: ReactNode
 }
 
-export default function PageHero({
+export const PageHero = ({
   heading = "Default heading",
   subheading = "Default subheading",
   children,
-}: PageHeroProps) {
+}: PageHeroProps) => {
   return (
     <>
       <div className="max-w-2xl py-16">

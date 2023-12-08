@@ -1,6 +1,6 @@
-import NavMenu from "./navMenu"
+import { NavMenu } from "./navMenu"
 
-export default function Footer() {
+export const Footer = () => {
   return (
     <footer className="mt-16 border-t py-10">
       <div className="flex flex-wrap justify-between gap-x-3 gap-y-6">
