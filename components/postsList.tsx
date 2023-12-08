@@ -4,6 +4,8 @@ import WorkCard from "@/components/workCard"
 import Link from "next/link"
 import { compareDesc, format, parseISO } from "date-fns"
 import { allPosts, Post } from "contentlayer/generated"
+import { Separator } from "./ui/separator"
+import { Fragment } from "react"
 
 const colorVariant = siteConfig.accentColor.colorVariant
 const { accentTextClass } = siteConfig.accentColor.colorVariants[colorVariant]
@@ -40,7 +42,12 @@ export function PostsList() {
   return (
     <div className="space-y-6">
       {posts.map((post, idx) => (
-        <PostCard key={idx} {...post} />
+        <Fragment key={idx}>
+          <PostCard {...post} />
+          {idx !==  posts.length - 1 && (
+            <Separator />
+          )}
+        </Fragment>
       ))}
     </div>
   )
