@@ -2,11 +2,11 @@
 
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import NavMenu from "./navMenu"
+import { NavMenu } from "./navMenu"
 import { ThemeToggle } from "./themeToggle"
 import { useState } from "react"
 
-export default function Header() {
+export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
   const toggleMenu = () => {
     setIsOpen(!isOpen)

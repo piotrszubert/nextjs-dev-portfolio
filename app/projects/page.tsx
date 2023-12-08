@@ -1,6 +1,6 @@
-import PageHero from "@/components/pageHero"
+import { PageHero } from "@/components/pageHero"
 import { siteConfig } from "@/config/site"
-import ProjectsList from "@/components/projectsList"
+import { ProjectsList } from "@/components/projectsList"
 
 export default function Projects() {
   return (

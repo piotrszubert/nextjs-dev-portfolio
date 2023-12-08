@@ -25,11 +25,11 @@ type linktType = {
   name?: string
 }
 
-export default function NavMenu({
+export const NavMenu = ({
   flexDirection = "flex-row",
   gap = "gap-3",
   markActiveLink = true,
-}: NavMenuProps) {
+}: NavMenuProps) => {
   // const router = useRouter();
 
   // const markLink = (markActiveLink: boolean, link: linktType) => {

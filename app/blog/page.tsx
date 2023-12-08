@@ -1,5 +1,5 @@
 import { PostsList } from "@/components/postsList"
-import PageHero from "@/components/pageHero"
+import { PageHero } from "@/components/pageHero"
 import { siteConfig } from "@/config/site"
 
 export default function BlogPage() {
