@@ -34,17 +34,23 @@ function PostCard(post: Post) {
   )
 }
 
-export function PostsList() {
+type PostListProps = {
+  limit?: number
+}
+
+export function PostsList({limit}: PostListProps) {
   const posts = allPosts.sort((a, b) =>
     compareDesc(new Date(a.date), new Date(b.date))
   )
 
+  const postsToDisplay = limit ? posts.slice(0, limit) : posts
+
   return (
     <div className="space-y-6">
-      {posts.map((post, idx) => (
+      {postsToDisplay.map((post, idx) => (
         <Fragment key={idx}>
           <PostCard {...post} />
-          {idx !==  posts.length - 1 && (
+          {idx !==  postsToDisplay.length - 1 && (
             <Separator />
           )}
         </Fragment>

@@ -28,7 +28,7 @@ export default function Home() {
         />
       </PageHero>
       <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-        <PostsList />
+        <PostsList limit={2} />
         <div className="space-y-6 md:ps-10">
           {/* <NewsletterCard/> */}
           <WorkCard />
